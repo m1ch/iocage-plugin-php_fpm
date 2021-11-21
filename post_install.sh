@@ -21,6 +21,9 @@ sed -i '' -E 's#^;?listen ?=.*$#listen = /var/run/php-fpm/www/php-fpm.sock#' /us
 sed -i '' -E 's#^;?listen.owner ?=.*$#listen.owner = www#' /usr/local/etc/php-fpm.d/www/www.conf
 sed -i '' -E 's#^;?listen.group ?=.*$#listen.group = www#' /usr/local/etc/php-fpm.d/www/www.conf
 
+
+
+
 service php-fpm start
 
 exit
